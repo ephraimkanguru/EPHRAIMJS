@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form Validation Example">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="assngment four.css">
+</head>
+<body>
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error" id="nameError"></span>
+        <br/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+        <br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="error" id="passwordError"></span>
+        <br/>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span class="error" id="confirmPasswordError"></span>
+        <br/>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+        <span class="error" id="ageError"></span>
+        <br/>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <span class="error" id="genderError"></span>
+        <br/>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+        </select>
+        <span class="error" id="countryError"></span>
+        <br/>
+
+        <label>
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the terms and conditions
+        </label>
+        <span class="error" id="termsError"></span>
+        <br/>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <h2>Login Form</h2>
+    <form id="loginForm">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="email" required>
+        <span class="error" id="loginEmailError"></span>
+        <br/>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="password" required>
+        <span class="error" id="loginPasswordError"></span>
+        <br/>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="assignment four.js"></script>
+</body>
+</html>
+
